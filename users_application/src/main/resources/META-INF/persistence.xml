@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="mysqlUnit">
+        <provider>ua.danit.jpa.JpaPersistenceProvider</provider>
+        <class>ua.danit.users.entity.User</class>
+        <class>ua.danit.users.entity.Group</class>
+        <properties>
+            <property name="ua.danit.jpa.connection_url" value="jdbc:postgresql://localhost/users-db"/>
+            <property name="ua.danit.jpa.username" value="some_user"/>
+            <property name="ua.danit.jpa.password" value="some_password"/>
+            <property name="ua.danit.jpa.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
